@@ -5,3 +5,15 @@ Trigger URL : https://zabbixprod/triggers.php?form=update&triggerid=162186&hosti
 
 Expression : 
 {Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logsource(^mpio$)}=1 and {Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logeventid(16)}=1
+
+
+Changed Template
+Template-Windows-IA-Common-2019-CriticalServers
+https://zabbixprod/triggers.php?form=update&triggerid=162186
+
+https://zabbixprod/triggers.php?filter_hostids%5B%5D=14760&filter_name=SEL9001&filter_state=-1&filter_status=-1&filter_value=-1&filter_evaltype=0&filter_tags%5B0%5D%5Btag%5D=&filter_tags%5B0%5D%5Boperator%5D=0&filter_tags%5B0%5D%5Bvalue%5D=&filter_inherited=-1&filter_discovered=-1&filter_dependent=-1&filter_set=1
+
+{Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logsource(^mpio$)}=1 and {Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logeventid(16)}=1 and 
+
+
+{Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logsource(^mpio$)}=1 and {Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logeventid(16)}=1 and {Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].nodata(25h)}=0
