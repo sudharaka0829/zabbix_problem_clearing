@@ -1,0 +1,7 @@
+Template : Template-Windows-IA-Common-2019-CriticalServers
+Trigger Name : SEL9001: [{HOSTNAME}][H][IAE][System,SRC-mpio, EventID-16]
+SEL9001
+Trigger URL : https://zabbixprod/triggers.php?form=update&triggerid=162186&hostid=14760
+
+Expression : 
+{Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logsource(^mpio$)}=1 and {Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logeventid(16)}=1
