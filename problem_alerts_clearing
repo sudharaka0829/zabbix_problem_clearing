@@ -1,0 +1,5 @@
+{Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logsource(^mpio$)}=1 
+and {Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].logeventid(16)}=1
+
+
+{Template-Windows-IA-Common-2019-CriticalServers:eventlog[System,,"ERROR|CRITICAL",mpio,16,,].nodata(90000)}=1
