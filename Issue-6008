@@ -1,3 +1,7 @@
 6008
 
 {ASOMPXASH302:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].logsource(^EventLog$)}=1 and {ASOMPXASH302:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].logeventid(6008)}=1
+
+
+{Template-Windows-IA-Common-2019:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].logsource(^EventLog$)}=1 and {Template-Windows-IA-Common-2019:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].logeventid(6008)}=1 and 
+{Template-Windows-IA-Common-2019:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].nodata(25h)}=0
