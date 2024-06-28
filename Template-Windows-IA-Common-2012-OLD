@@ -1,0 +1,17 @@
+Template-Windows-IA-Common-2012-OLD
+
+SEL9005: [{HOSTNAME}][H][IAE][System,SRC-Service Control Manager,EVTID-7032]
+
+{Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7032,,].logsource(^Service Control Manager$)}=1 and {Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7032,,].logeventid(7032)}=1 
+
+
+{Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7032,,].logsource(^Service Control Manager$)}=1 and {Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7032,,].logeventid(7032)}=1 and 
+{Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7032,,].nodata(18000)}=0
+
+
+SEL9004: [{HOSTNAME}][H][IAE][System,SRC-Service Control Manager,EVTID-7031]
+
+{Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].logsource(^Service Control Manager$)}=1 and {Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].logeventid(7031)}=1
+
+{Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].logsource(^Service Control Manager$)}=1 and {Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].logeventid(7031)}=1 and 
+{Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].nodata(18000)}=0
