@@ -1,0 +1,2 @@
+ 
+{ASOMPDLAP301:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7032,,].logsource(^Service Control Manager$)}=1 and {ASOMPDLAP301:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7032,,].logeventid(7032)}=1
