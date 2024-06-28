@@ -1,0 +1,14 @@
+Template 
+Template-Windows-IA-Common-2019
+
+Trigger
+SEL9008: [{HOSTNAME}][H][IAE][System,SRC-EventLog,EVTID-6008]
+
+
+{Template-Windows-IA-Common-2019:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].logsource(^EventLog$)}=1 and {Template-Windows-IA-Common-2019:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].logeventid(6008)}=1 and 
+{Template-Windows-IA-Common-2019:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].nodata(18000)}=0
+
+
+	
+{Template-Windows-IA-Common-2019:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].logsource(^EventLog$)}=1 and {Template-Windows-IA-Common-2019:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].logeventid(6008)}=1 and 
+{Template-Windows-IA-Common-2019:eventlog[System,,"ERROR|CRITICAL",EventLog,6008,,].nodata(18000)}=0
