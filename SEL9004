@@ -1,0 +1,5 @@
+https://zabbixdr/triggers.php?filter_hostids%5B%5D=11214&filter_name=SEL9004&filter_state=-1&filter_status=-1&filter_value=-1&filter_evaltype=0&filter_tags%5B0%5D%5Btag%5D=&filter_tags%5B0%5D%5Boperator%5D=0&filter_tags%5B0%5D%5Bvalue%5D=&filter_inherited=-1&filter_discovered=-1&filter_dependent=-1&filter_set=1
+
+{Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].logsource(^Service Control Manager$)}=1 and {Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].logeventid(7031)}=1 and {Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].nodata(25h)}=0
+
+{Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].logsource(^Service Control Manager$)}=1 and {Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].logeventid(7031)}=1 and {Template-Windows-IA-Common-2012-OLD:eventlog[System,,"ERROR|CRITICAL",Service Control Manager,7031,,].nodata(25h)}=0
